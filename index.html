@@ -1,79 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
-	<style type="text/css">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-	@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css');
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
-	body {
-	  margin: 0;
-	  padding: 10vh 10vw;
-	  color: #444;
-	}
+.header {
+  text-align: center;
+  padding: 32px;
+}
 
-	h1 {
-	  font-weight: 700px;
-	}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
-	h2 {
-	  font-weight: 600;
-	}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
-	a, a:hover {
-	  color: #ff5268;
-	}
+.column img, video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
-	.card {
-	  transition: background .2s;
-	  background: #f1ecec;
-	  border: 0;
-	}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
-	.card:hover {
-	  background: rgb(234, 229, 229);
-	}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
 
-	.card img {
-    	height: 100%;
-	}
-
-	</style>
 </head>
+
 <body>
 
-<p>
-  Examples of displaying Images, YouTube, mp4.
-</p>
+<!-- Photo Grid -->
+<div class="row"> 
 
-<div class="row">
-  <div class="card-deck col-12">
-    
-    <div class="card">
-    	<a href="https://source.unsplash.com/xAgvgQpYsf4/1500x1000" data-fancybox>
-	    <img class="card-img-top img-fluid" src="https://source.unsplash.com/xAgvgQpYsf4/240x160" />
+  <div class="column">
+  	<a href="https://i.imgur.com/OvIaGnJ.jpg" data-fancybox="images">
+	    <img src="https://i.imgur.com/OvIaGnJ.jpg" style="width:100%"/>
 	  </a>
-    </div>
 
-  	<div class="card">
-      <a data-fancybox data-small-btn="true" href="https://www.youtube.com/watch?v=rahRaVtEQaM">
-        <img class="card-img-top img-fluid" src="http://img.youtube.com/vi/rahRaVtEQaM/mqdefault.jpg" />
-      </a>
-      <h4 class="text-center">Vidio from youtube</h4>
-    </div>
+	  <a href="https://source.unsplash.com/juHayWuaaoQ/1500x1000" data-fancybox="images">
+	    <img src="https://source.unsplash.com/juHayWuaaoQ/240x160" style="width:100%"/>
+	  </a>
 
-    <div class="card">
-      <a data-fancybox data-width="640" data-height="360" href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4">
-        <img class="card-img-top img-fluid" src="https://peach.blender.org/wp-content/uploads/bird1.jpg" />
-      </a>
-      <h4 class="text-center">Vidio from mp4 direct</h4>
-    </div>
+	  <a href="https://i.imgur.com/APeK1vK.jpg" data-fancybox="images">
+	    <img src="https://i.imgur.com/APeK1vK.jpg" style="width:100%"/>
+	  </a>
 
   </div>
-</div>
 
+  <div class="column">
+   <a href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" data-fancybox="images">
+    <video controls style="width:100%">
+	  <source src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" type="video/mp4">
+	</video>
+   </a>
+
+  <a href="https://i.imgur.com/73VD3JN.jpg" data-fancybox="images">
+    <img src="https://i.imgur.com/73VD3JN.jpg" style="width:100%"/>
+  </a>
+
+  <a href="https://i.imgur.com/tScTDsj.jpg" data-fancybox="images">
+    <img src="https://i.imgur.com/tScTDsj.jpg" style="width:100%"/>
+  </a>
+ 
+  <a href="https://source.unsplash.com/i2KibvLYjqk/1500x1000" data-fancybox="images">
+    <img src="https://source.unsplash.com/i2KibvLYjqk/240x160" style="width:100%"/>
+  </a>
+  </div> 
+
+  <div class="column">
+
+	  <a href="https://i.imgur.com/APeK1vK.jpg" data-fancybox="images">
+	    <img src="https://i.imgur.com/APeK1vK.jpg" style="width:100%"/>
+	  </a>
+	  
+	  <a href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" data-fancybox="images">
+	    <video controls style="width:100%">
+		  <source src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" type="video/mp4">
+		</video>
+	   </a>
+
+	  <a href="https://source.unsplash.com/c1JxO-uAZd0/1500x1000" data-fancybox="images">
+	    <img src="https://source.unsplash.com/c1JxO-uAZd0/240x160" style="width:100%"/>
+	  </a>
+
+	  <a href="https://source.unsplash.com/i2KibvLYjqk/1500x1000" data-fancybox="images">
+	    <img src="https://source.unsplash.com/i2KibvLYjqk/240x160" style="width:100%"/>
+	  </a>
+  </div>
+
+  <div class="column">
+     <a href="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" data-fancybox="images">
+    <video controls style="width:100%">
+	  <source src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" type="video/mp4">
+	</video>
+   </a>
+
+  <a href="https://i.imgur.com/73VD3JN.jpg" data-fancybox="images">
+    <img src="https://i.imgur.com/73VD3JN.jpg" style="width:100%"/>
+  </a>
+
+  <a href="https://i.imgur.com/tScTDsj.jpg" data-fancybox="images">
+    <img src="https://i.imgur.com/tScTDsj.jpg" style="width:100%"/>
+  </a>
+ 
+  <a href="https://source.unsplash.com/i2KibvLYjqk/1500x1000" data-fancybox="images">
+    <img src="https://source.unsplash.com/i2KibvLYjqk/240x160" style="width:100%"/>
+  </a>
+  </div>
+
+</div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
